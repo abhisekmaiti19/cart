@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Basic&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins;
+      }
+      
+      .cart {
+        margin-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 5vh;
+        margin-top: 20px;
+        padding: 20px;
+        max-height: 75vh;
+        width: 80vw;
+        border: solid 2px rgb(0, 0, 0);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        overflow:scroll;
+
+        background: #314755;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+      ::-webkit-scrollbar{
+        background-color: transparent;
+        width: 8px;
+        
+      }
+      ::-webkit-scrollbar-thumb{
+        background-color:#ffffff;
+        border-radius: 50px;
+        
+       
+      }
+      .items {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 250px;
+        height: 30%;
+        width: 100%;
+        border: solid white;
+        align-items: center;
+        border-radius:15px ;
+        padding: 20px;
+        color: white;
+
+        
+background: rgba(255, 255, 255, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(18.1px);
+-webkit-backdrop-filter: blur(18.1px);
+border: 1px solid rgba(255, 255, 255, 1);
+        
+
+      }
+      .details {
+        display: flex;
+        column-gap: 25px;
+        
+        align-items: center;
+        /* border: solid; */
+      }
+      .details img {
+        width: 120px;
+        height: 120px;
+        border: solid 2px rgb(255, 255, 255);
+        border-radius: 15px;
+      }
+      .price{
+        display: flex;
+        column-gap: 5vw;
+        margin-top: 20px;
+      }
+      .price button{
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 13px;
+        background-color: transparent;
+        border: white solid 1px;
+        color: white;
+      }
+      button:hover{
+        cursor: pointer;
+        background-color: #ffffff;
+        color: #03164c;
+        transition: ease;
+        transition-delay: 100ms;
+        transition-duration: 100ms;
+        font-weight: 300px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      }
+      .checkOut{
+        z-index: 5000;
+        max-height: 10vh;
+        width: 80vw;
+        border: solid;
+        margin-left: 50px;
+        margin-top: 20px;
+        border-radius: 15px;
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    border: solid black 2px;
+        
+      }
+      .checkOut button{
+        width: 40vw;
+        border-radius: 15px;
+        margin-right: 8px;
+        height: 50px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        background-color: white;
+      }
+      .checkOut h2{
+        margin-bottom: 20px;
+        margin-left: 25px;
+      }
+      .checkOut button:hover{
+        
+background: rgba(255, 255, 255, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(18.1px);
+-webkit-backdrop-filter: blur(18.1px);
+border: 1px solid rgba(255, 255, 255, 1);
+color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="allItems">
+        <div class="cart">
+            <div class="items">
+              <div class="details">
+                <img src="doEpic.png" alt="product" />
+                <div class="bookDetail">
+                  <h3>DO. EPIC. SHIT</h3>
+                  <h6>Ankur Warikoo</h4>
+                </div>
+              </div>
+              <div class="price">
+                  <h2>₹125</h2>
+                  <button>Remove</button>
+              </div>
+              
+      
+            </div>
+      
+            <div class="items">
+              <div class="details">
+                <img src="doEpic.png" alt="product" />
+                <div class="bookDetail">
+                  <h3>DO. EPIC. SHIT</h3>
+                  <h6>Ankur Warikoo</h4>
+                </div>
+              </div>
+              <div class="price">
+                  <h2>₹125</h2>
+                  <button>Remove</button>
+              </div>
+              
+      
+            </div>
+      
+            <div class="items">
+              <div class="details">
+                <img src="doEpic.png" alt="product" />
+                <div class="bookDetail">
+                  <h3>DO. EPIC. SHIT</h3>
+                  <h6>Ankur Warikoo</h4>
+                </div>
+              </div>
+              <div class="price">
+                  <h2>₹125</h2>
+                  <button>Remove</button>
+              </div>
+              
+      
+            </div>
+      
+            <div class="items">
+              <div class="details">
+                <img src="doEpic.png" alt="product" />
+                <div class="bookDetail">
+                  <h3>DO. EPIC. SHIT</h3>
+                  <h6>Ankur Warikoo</h4>
+                </div>
+              </div>
+              <div class="price">
+                  <h2>₹125</h2>
+                  <button>Remove</button>
+              </div>
+              
+      
+            </div>
+            
+          </div>
+    </div>
+
+    <div class="checkOut">
+        <div class="price"><h2>Total : ₹ 1500</h2></div>
+        <button>Complete Payment</button>
+        
+    </div>
+   
+    
+  </body>
+</html>
